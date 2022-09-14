@@ -1,0 +1,44 @@
+.weather-icon {
+  width: 80px;
+  box-shadow: 5px 3px 3px #829dbc;
+  border-radius: 14px;
+}
+.border {
+  width: 720px;
+  padding: 50px;
+  border-radius: 4px;
+  border-width: 4px;
+
+  background: linear-gradient(to top, #829dbc 0%, #eee1f9 100%);
+  box-shadow: 10px 5px 5px grey;
+}
+.text {
+  border-color: #ececec;
+}
+.city {
+  border-radius: 8px;
+  font-size: 18px;
+}
+.weekday {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px #829dbc;
+}
+p {
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  text-shadow: 1px 1px 2px #829dbc;
+}
+h1,
+h2,
+h5 {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-shadow: 1px 1px 2px grey;
+}
+div.col-2 {
+  padding: 0;
+}
