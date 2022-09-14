@@ -1,3 +1,4 @@
+const axios = require("axios").default;
 function showTemperature(response) {
   console.log(response);
   console.log(response.data.main.temp);
@@ -27,7 +28,7 @@ function changeCity(event) {
 let searchCity = document.querySelector("#search-form");
 let button = document.querySelector("#current-city");
 button.addEventListener("click", getCurrentPosition);
-
+searchCity.addEventListener("submit", changeCity);
 function currentTemperature(current) {
   let h1 = document.querySelector("h1");
   h1.innerHTML = `${current.data.name}`;
