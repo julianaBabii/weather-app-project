@@ -5,6 +5,12 @@ function showTemperature(response) {
   let temperature = Math.round(temperatureElement);
   let temp = document.querySelector("#temperature");
   temp.innerHTML = `${temperature}`;
+  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+  document.querySelector("#wind").innerHTML = Math.round(
+    response.data.wind.speed
+  );
+  document.querySelector("#description").innerHTML =
+    response.data.weather[0].main;
 }
 function changeCity(event) {
   event.preventDefault();
@@ -28,6 +34,12 @@ function currentTemperature(current) {
   let temp = Math.round(current.data.main.temp);
   let temperature = document.querySelector("#temperature");
   temperature.innerHTML = `${temp}`;
+  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+  document.querySelector("#wind").innerHTML = Math.round(
+    response.data.wind.speed
+  );
+  document.querySelector("#description").innerHTML =
+    response.data.weather[0].main;
 }
 function currentCity(current) {
   let apiKey = "99b8f9330a1bfba3a85e523fd3c2e528";
