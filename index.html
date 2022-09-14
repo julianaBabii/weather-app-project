@@ -24,14 +24,14 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="src/styles.css" />
-  </head>-
+  </head>
   <body>
     <div class="container">
       <div class="border">
         <form class="city" id="search-form">
           <input type="text" placeholder="Enter your city" id="place" />
           <input type="submit"class="btn btn-primary" value="Search" id="search-city" >
-           <input type="submit"class="btn btn-secondary" value="Current" id="current-city" >
+          <input type="submit"class="btn btn-secondary" value="Current" id="current-city" >
         </form>
         <div class="row">
           <div class="col-3">
@@ -44,11 +44,12 @@
 
           <div class="col-3">
             <h2>Today🌡</br> 
-              <span id="temperature"></span> 
-               <a href="#" id="unit">°C</a> <a href="#">°F</a></h2>
+               <span class="temperature" id="temperature">26</span>
+               <a href="#" id="celsius-link">°C</a> 
+              <a href="#" id="fahrenheit-link">°F</a> </h2>
           </div>
           <div class="col-3">
-           <h5>Humidity <span id=humidity></span>% </h5>
+            <h5>Humidity <span id=humidity></span>% </h5>
             <h5>Wind <span id=wind></span>km/h </h5>
             <h5 id=description></h5>
           </div>
@@ -87,7 +88,11 @@
           </div>
         </div>
       </div>
+      <h6> <a href="https://github.com/julianaBabii/weather-app-project"> Open-source code</a> by Juliana Babii</h6>
     </div>
     <script src="src/script.js"></script>
   </body>
 </html>
+
+
+	
